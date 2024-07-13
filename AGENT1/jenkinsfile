@@ -1,16 +1,11 @@
 pipeline {
-    agent any
-     environment {
-        TEST = "test value"
-     }
-    stages {
-        stage('Example') {
-            steps {
-                 sh '''
-                echo '$TEST'
+    agent any 
+       stages { stage('bulid') {
+  steps {
+    // One or more steps need to be included within the steps block.
+  }
+}
 
-                '''
-            }
-        }
-    }
+
+       }
 }
