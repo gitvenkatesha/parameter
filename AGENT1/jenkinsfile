@@ -1,7 +1,9 @@
 pipeline {
     agent any 
-       stages { stage('bulid') {
+       stages { 
+        stage('bulid') {
   steps {
+    echo "233"
     
   }
 }
