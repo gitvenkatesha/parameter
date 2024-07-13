@@ -1,9 +1,15 @@
 pipeline {
     agent any
+     environment {
+        TEST = "test value"
+     }
     stages {
         stage('Example') {
             steps {
-                echo 'Hello World'
+                 '''
+                echo '$TEST'
+
+                '''
             }
         }
     }
