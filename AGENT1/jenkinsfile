@@ -6,6 +6,13 @@ pipeline {
     echo "233"
     
   }
+
+}
+stage('test') {
+    steps {
+
+        
+    }
 }
 
 
